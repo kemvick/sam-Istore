@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/profile.css">
+  <title>Sam Istore</title>
+</head>
+<body>
+<nav class="nav-header">
+    <div class="nav-logo">
+    <img src="/store.png" class="img" alt="">
+    <a href="index.html" class="home-link">
+        <h3>
+        Sam Istore
+      </h3>
+      </a>
+    </div>
+    <div class="nav-list">
+      <button class="navclose-btn">&times;</button>
+      <div class="user1 profile-icon">
+        <img src="/user.png" class="user-img" alt="">
+      </div>
+       <a href="profile.html" class="nav-link">Everything</a>
+       <a href="#" class="nav-link">Men</a>
+       <a href="#" class="nav-link">order</a>
+       <a href=" #" class="nav-link">Accessories</a>
+     </div>
+     
+     
+     <!-- cart btn -->
+     <div class="cart-btn">
+       <img src="/shopping-cart-icon.webp" class="cart-icon" alt="">
+       <div class="totalQuantity">0</div>
+      </div>
+      <div class="user2 profile-icon">
+         <img src="/user.png" class="user-img" alt="">
+       </div>
+    
+      <div class="nav-btn">
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+  </div>
+
+</nav>
+<main class="page">
+ <!-- header -->
+ <!-- <header class="banner">
+  <div class="banner-container">
+    <div class="banner-text">
+      <h1>Raining Offers For hot summer!</h1>
+      <h4>25% off on all products</h4>
+      <div class="hero-btns">
+        <div class="btn1 hero-btn">shop now</div>
+        <div class="btn2 hero-btn">find more</div>
+      </div>
+    </div>
+  </div>
+</header> -->
+ 
+<!-- cart -->
+<div class="cart">
+  <!-- cart header -->
+  <div class="cart-header">
+    <button class="cart-close">&times;</button>
+    <h4>Shopping Cart</h4>
+  </div>
+  <!-- cartlist -->
+  <div class="cartlist">
+    <!-- <div class="cart-item">
+      <img src="/images/product-accessory1.jpg" class="cart-img" alt="">
+      <div class="content">
+        <p class="product-title">
+          product name
+        </p>
+        <p class="product-price">
+          $50/1 product
+        </p>
+      </div>
+      <div class="quantity">
+        <button onclick="removeFromCart(${index})">&times;</button>
+      </div>
+    </div> -->
+  </div>
+  <div class="buttons">
+    <!-- <div class="close">CLOSE</div> -->
+    <button class="checkout" onclick="checkout()">
+      <a href="#">CHECKOUT</a>
+    </button>
+  </div>
+</div>
+<!-- Products -->
+<section class="products-container">
+  <div class="shop-banner">
+    <div class="sbanner-container">
+      <div class="sbanner-text">
+        <p class="p-header">Shop with us</p>
+        <p class="s-text">We got the best for you..</p>
+
+      </div>
+    </div>
+  </div>
+  <!-- product list -->
+  <div class="product-list">
+            <!-- single product -->
+            <div class="product">
+              <img src="/images/product-accessory1.jpg" class="product-img" alt=""> 
+              <p class="product-title">Accessory</p>
+              <p class="product-category">Women</p>
+              <p class="product-price">$20.00</p>
+              <button class="tocart-btn" onclick="addToCart('item1', 10)">Add to cart</button>
+            </div>
+            <!-- single product -->
+            <div class="product">
+              <img src="/images/product-bag2.jpg" class="product-img" alt=""> 
+              <p class="product-title">Anchor Bracelet</p>
+              <p class="product-category">Women</p>
+              <p class="product-price">$150.00</p>
+              <button class="tocart-btn" onclick="addToCart('item2', 15)">Add to cart</button>
+            </div> 
+            <!-- single product-->
+            <div class="product">
+              <img src="/images/product-bag4.jpg" class="product-img" alt=""> 
+              <p class="product-title">Anchor Bracelet</p>
+              <p class="product-category">Women</p>
+              <p class="product-price">$150.00</p>
+              <button class="tocart-btn" onclick="addToCart('item3', 20)">Add to cart</button>
+            </div>
+            <!-- single product -->
+            <div class="product">
+              <img src="/images/product-hoodie1.jpg" class="product-img" alt=""> 
+              <p class="product-title">Anchor Bracelet</p>
+              <p class="product-category">Women</p>
+              <p class="product-price">$150.00</p>
+              <button class="tocart-btn" onclick="addToCart('item4', 25)">Add to cart</button>
+            </div>
+            <!-- single product -->
+            <div class="product">
+              <img src="/images/product-hoodie2.jpg" class="product-img" alt=""> 
+              <p class="product-title">Anchor Bracelet</p>
+              <p class="product-category">Women</p>
+              <p class="product-price">$150.00</p>
+              <button class="tocart-btn" onclick="addToCart('item5', 30)">Add to cart</button>
+            </div>
+            <!-- single product -->
+            <div class="product">
+              <img src="/images/product-w-jeans1.jpg" class="product-img" alt=""> 
+              <p class="product-title">Anchor Bracelet</p>
+              <p class="product-category">Women</p>
+              <p class="product-price">$150.00</p>
+              <button class="tocart-btn" onclick="addToCart('item6', 35)">Add to cart</button>
+            </div>
+            <!-- single product -->
+            <div class="product">
+              <img src="/images/product-w-jeans2.jpg" class="product-img" alt=""> 
+              <p class="product-title">Anchor Bracelet</p>
+              <p class="product-category">Women</p>
+              <p class="product-price">$150.00</p>
+              <button class="tocart-btn" onclick="addToCart('item7', 40)">Add to cart</button>
+            </div>
+            <!-- single product -->
+            <div class="product">
+              <img src="/images/product-w-jeans4.jpg" class="product-img" alt=""> 
+              <p class="product-title">Anchor Bracelet</p>
+              <p class="product-category">Women</p>
+              <p class="product-price">$150.00</p>
+              <button class="tocart-btn"onclick="addToCart('item8', 45)">Add to cart</button>
+            </div>
+            <!-- single product -->
+            <div class="product">
+              <img src="/images/product.jpg" class="product-img" alt=""> 
+              <p class="product-title">Anchor Bracelet</p>
+              <p class="product-category">Women</p>
+              <p class="product-price">$150.00</p>
+              <button class="tocart-btn" onclick="addToCart('item9', 50)">Add to cart</button>
+            </div>
+            <!-- single product -->
+            <div class="product">
+              <img src="/images/tshirt2.jpg" class="product-img" alt=""> 
+              <p class="product-title">Anchor Bracelet</p>
+              <p class="product-category">Women</p>
+              <p class="product-price">$150.00</p>
+              <button class="tocart-btn" onclick="addToCart('item10', 55)">Add to cart</button>
+            </div>
+
+          </div>
+</section>
+        <!-- modal -->
+  <section class="container">
+        <!-- <div class="modal hidden">
+          <button class="closemodal-btn">&times;</button>
+          <h2 class="modal-header">
+            <br />
+            Create Account<span class="highlight"></span>
+          </h2>
+          <form id="registrationForm"class="form" onsubmit="return validateRegistration()">
+            <div class="form-control" >
+              <input type="email" name="email"   id="regEmail" placeholder="email"  class ="form-input"required/>
+            </div>
+            <div class="form-control">
+              <div></div>
+              <input  type="name" name="name"  id="regName" placeholder="name" class ="form-input" required/>
+            </div>
+            <div class="form-control">
+              <input type="password" name="password"  id="regPassword" placeholder="password" class ="form-input"required/>
+            </div>
+            <button type="submit" class="signup-btn ">Sign Up</button>
+          </form>
+          <p class="already">Already have an account? <a href="" class="loginmodal" >Login</a></p>
+        </div>
+        <div class="modal-two hidden-two">
+          <button class="closemodal-btn-two">&times;</button>
+          <h2 class="modal-header">
+            <br />
+            Welcome Back!<span class="highlight"></span>
+          </h2>
+          <form id="loginForm" class="form" onsubmit="return validateLogin()">
+            <div class="form-control">
+              <input type="email" name="email" placeholder="email" id="loginEmail"class ="form-input" required/>
+            </div>
+            <div class="form-control">
+              <input type="password" name="password" placeholder="password" id="loginPassword" class ="form-input"required/>
+            </div>
+            <button type="submit" class="signup-btn ">Login</button>
+          </form>
+          <p class="already">Don't have an account? <a href="" class="signup-modal" >Sign up</a></p>
+        </div> -->
+        
+      </section>
+      <!-- logout  -->
+      <div class="logout-modal logout-hidden">
+        <p class="logout-header">Log Out?</p>
+        <p>Are you sure you want to log out?</p>
+        <!-- confirm logout -->
+        <div class="confirm-logout ">
+          <button class="cancel-btn">Cancel</button>
+          <button class="confirm-btn"><a href="index.html">Logout</a></button>
+        </div>
+      </div>
+      <div class="logout-hidden logout-overlay"></div>
+      <hr>
+      <section class="sale-off">
+        <h3>SALE UP TO 70% OFF FOR ALL PRODUCTS</h3>
+      </section>
+      <hr>
+     <section class="subscribe">
+    <div class="group">
+
+
+      <div class="footer-logo">
+  
+        <img src="/store.png" class="footer-img" alt="">
+        <!-- <h4>Samstore</h4> -->
+      </div>
+      <h4>The best look anytime, anywhere.</h4>
+    </div>
+    <div class="female">
+      <h4>For Her</h4>
+      <p>Women Jeans</p>
+      <p>Tops and Shirts</p>
+      <p>Women Jackets</p>
+      <p>Heels and Flats</p>
+      <p>Women Accessories</p>
+    </div>
+    <div class="male">
+      <h4>For Him</h4>
+      <p>Men Jeans</p>
+      <p>Tops and Shirts</p>
+      <p>Men Jackets</p>
+      <p>Heels and Flats</p>
+      <p>Men Accessories</p>
+    </div>
+  <div class="subcribeform">
+    <h4>Subscribe</h4>
+    <form class="subscribe-form">
+      <input type="email" name="email" placeholder="Your email address.." >
+    </form>
+    <button type="submit" class="sub-btn">SUBSCRIBE</button>
+  </div>
+  </section>
+    </main>
+  <footer class="page-footer">
+    <p> Copyright&copy;2024 Sam Istore. powered by Sam Istore</p>
+  </footer>
+  <!-- javascript -->
+  <script src="/js/app.js"></script>
+  <script src="/js/validation.js"></script>
+  <script src="/js/shopping cart.js"></script>
+  <!-- <script src="/js/data.js"></script> -->
+</body>
+</html>
