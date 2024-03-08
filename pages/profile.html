@@ -99,7 +99,6 @@
       <div class="sbanner-text">
         <p class="p-header">Shop with us</p>
         <p class="s-text">We got the best for you..</p>
-
       </div>
     </div>
   </div>
@@ -118,7 +117,7 @@
               <img src="/images/product-bag2.jpg" class="product-img" alt=""> 
               <p class="product-title">Bag</p>
               <p class="product-category">Women</p>
-              <p class="product-price">$150.00</p>
+              <p class="product-price">$60.00</p>
               <button class="tocart-btn" onclick="addToCart('item2', 15)">Add to cart</button>
             </div> 
             <!-- single product-->
@@ -126,7 +125,7 @@
               <img src="/images/product-bag4.jpg" class="product-img" alt=""> 
               <p class="product-title">Luxury Bag</p>
               <p class="product-category">Women</p>
-              <p class="product-price">$150.00</p>
+              <p class="product-price">$50.00</p>
               <button class="tocart-btn" onclick="addToCart('item3', 20)">Add to cart</button>
             </div>
             <!-- single product -->
@@ -134,7 +133,7 @@
               <img src="/images/product-hoodie1.jpg" class="product-img" alt=""> 
               <p class="product-title">Hoddie</p>
               <p class="product-category">Women</p>
-              <p class="product-price">$150.00</p>
+              <p class="product-price">$69.00</p>
               <button class="tocart-btn" onclick="addToCart('item4', 25)">Add to cart</button>
             </div>
             <!-- single product -->
@@ -142,7 +141,7 @@
               <img src="/images/product-hoodie2.jpg" class="product-img" alt=""> 
               <p class="product-title">Hoddie</p>
               <p class="product-category">Women</p>
-              <p class="product-price">$150.00</p>
+              <p class="product-price">$75.00</p>
               <button class="tocart-btn" onclick="addToCart('item5', 30)">Add to cart</button>
             </div>
             <!-- single product -->
@@ -150,7 +149,7 @@
               <img src="/images/product-w-jeans1.jpg" class="product-img" alt=""> 
               <p class="product-title">Short</p>
               <p class="product-category">Women</p>
-              <p class="product-price">$150.00</p>
+              <p class="product-price">$54.00</p>
               <button class="tocart-btn" onclick="addToCart('item6', 35)">Add to cart</button>
             </div>
             <!-- single product -->
@@ -158,7 +157,7 @@
               <img src="/images/product-w-jeans2.jpg" class="product-img" alt=""> 
               <p class="product-title">Jeans Trouser</p>
               <p class="product-category">Women</p>
-              <p class="product-price">$150.00</p>
+              <p class="product-price">$48.00</p>
               <button class="tocart-btn" onclick="addToCart('item7', 40)">Add to cart</button>
             </div>
             <!-- single product -->
@@ -166,7 +165,7 @@
               <img src="/images/product-w-jeans4.jpg" class="product-img" alt=""> 
               <p class="product-title">Jeans</p>
               <p class="product-category">Women</p>
-              <p class="product-price">$150.00</p>
+              <p class="product-price">$57.00</p>
               <button class="tocart-btn"onclick="addToCart('item8', 45)">Add to cart</button>
             </div>
             <!-- single product -->
@@ -174,7 +173,7 @@
               <img src="/images/product.jpg" class="product-img" alt=""> 
               <p class="product-title">Anchor Bracelet</p>
               <p class="product-category">Women</p>
-              <p class="product-price">$150.00</p>
+              <p class="product-price">$64.00</p>
               <button class="tocart-btn" onclick="addToCart('item9', 50)">Add to cart</button>
             </div>
             <!-- single product -->
@@ -182,10 +181,9 @@
               <img src="/images/tshirt2.jpg" class="product-img" alt=""> 
               <p class="product-title">T-shirt</p>
               <p class="product-category">Women</p>
-              <p class="product-price">$150.00</p>
+              <p class="product-price">$46.00</p>
               <button class="tocart-btn" onclick="addToCart('item10', 55)">Add to cart</button>
             </div>
-
           </div>
 </section>
         <!-- modal -->
@@ -241,6 +239,50 @@
         </div>
       </div>
       <div class="logout-hidden logout-overlay"></div>
+
+      <!-- checkout modal -->
+
+<div class="checkout-modal checkout-hidden">
+  <div class="checkout-header">
+    <p>Checkout</p>
+    <button class="checkout-close">&times;</button>
+  </div>
+  <form class="checkoutForm">
+    <div class="payment-method">
+      <img src="/Visa_Inc._logo.svg.webp" class="card-img" alt="visa-cars">
+      <img src="/MasterCard_Logo.svg.png" class="card-img" alt="master-card">
+      <img src="/paypal-logo.png" class="card-img" alt="paypal">
+    </div>
+    <div class="form-container">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" class="checkout-input" required><br>
+      </div>
+  <div>
+  
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" class="checkout-input" required><br>
+  </div>
+  <div>
+  
+    <label for="cardNumber">Card Number</label>
+    <input type="text" id="cardNumber" name="cardNumber"  class="checkout-input"required><br>
+  </div>
+  <div class="cv-exp">
+      <div class="form-control2">
+        <label for="expiryDate">Expiry Date</label>
+        <input type="text" id="expiryDate" name="expiryDate"  class="checkout-input2"required><br>
+      </div>
+    <div class="form-control2">
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" class="checkout-input2" required><br>
+    </div>
+  </div>
+    </div>
+    <button type="submit" class="pay-btn">Pay Now</button>
+  </form>
+</div>
+<div class="checkout-hidden checkout-overlay"></div>
       <hr>
       <section class="sale-off">
         <h3>SALE UP TO 70% OFF FOR ALL PRODUCTS</h3>
@@ -289,6 +331,7 @@
   <script src="/js/app.js"></script>
   <script src="/js/validation.js"></script>
   <script src="/js/shopping cart.js"></script>
+  <script src="/js/checkout.js"></script>
   <!-- <script src="/js/data.js"></script> -->
 </body>
 </html>

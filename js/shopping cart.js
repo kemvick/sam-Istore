@@ -45,6 +45,7 @@ function removeFromCart(index) {
 }
 
 function checkout() {
+  openCheckOut()
   var totalPrice = cartItems.reduce((total, item) => total + item.price, 0)
   alert('Total Price: $' + totalPrice.toFixed(2))
   cartItems = []

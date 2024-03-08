@@ -15,6 +15,7 @@ loginForm.addEventListener('submit', (e) => {
 })
 
 // registration validation
+
 function validateRegistration() {
   var name = document.getElementById('regName').value
   var email = document.getElementById('regEmail').value
@@ -29,7 +30,7 @@ function validateRegistration() {
   for (let i = 0; i < users.length; i++) {
     if (users[i].email === email) {
       alert('This email is already registered.')
-      return openModal
+      return false
     }
   }
 
@@ -48,6 +49,7 @@ function validateRegistration() {
   alert('Registration successful! Your unique ID is: ' + userId)
   return openModal2
 }
+
 // login form validation
 function validateLogin() {
   const email = document.getElementById('loginEmail').value
@@ -60,7 +62,7 @@ function validateLogin() {
       return true
     } else {
       alert('Invalid email or password. Please try again.')
-      return openModal2
+      return false
     }
   }
 }

@@ -46,8 +46,8 @@ const closeModal = function () {
 }
 // funtion for login modal
 
-const openModal2 = function (e) {
-  e.preventDefault()
+const openModal2 = function () {
+  // e.preventDefault()
   links.classList.remove('show-links')
   modalTwo.classList.remove('hidden-two')
   overlayTwo.classList.remove('hidden-two')
