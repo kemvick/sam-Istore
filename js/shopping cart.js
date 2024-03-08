@@ -1,6 +1,7 @@
 const cartIcon = document.querySelector('.cart-btn')
 const cart = document.querySelector('.cart')
 const closeCart = document.querySelector('.cart-close')
+const quantityElement = document.querySelector('.totalQuantity')
 
 cartIcon.addEventListener('click', () => {
   cart.classList.add('show-cart')
@@ -34,11 +35,13 @@ function addToCart() {
   }
   cartItems.push(item)
   renderCart()
+  IncreaseQuantity()
 }
 
 function removeFromCart(index) {
   cartItems.splice(index, 1)
   renderCart()
+  decreaseQuantity()
 }
 
 function checkout() {
@@ -46,6 +49,18 @@ function checkout() {
   alert('Total Price: $' + totalPrice.toFixed(2))
   cartItems = []
   renderCart()
+}
+
+function IncreaseQuantity() {
+  var currentQuantity = parseInt(quantityElement.textContent)
+  var newQuantity = currentQuantity + 1
+  quantityElement.textContent = newQuantity
+}
+
+function decreaseQuantity() {
+  var currentQuantity = parseInt(quantityElement.textContent)
+  var newQuantity = currentQuantity - 1
+  quantityElement.textContent = newQuantity
 }
 
 function renderCart() {
